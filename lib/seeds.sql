@@ -1,5 +1,7 @@
 BEGIN;
 
+<<<<<<< HEAD
+=======
 INSERT INTO grojjItems(item_id, name, price, condition, likes ,url, sellerid) VALUES
 
 (1, 'Red Vintage Armchair', '$', 'Barely Used', 0, '', 1),
@@ -12,11 +14,14 @@ INSERT INTO grojjItems(item_id, name, price, condition, likes ,url, sellerid) VA
 (8, 'Bugs Bunny Looney Tunz jersey', '$$$', 'New', 0, '', 3),
 (9, 'Hunger Games book trilogy', '$', 'Barely Used', 0, '', 4),
 (10, 'Game of Risk', '$$', 'Used', 0, '', 4);
+>>>>>>> 1c4c87c8709cb13a39bb5f26302e8d8f38373279
 
 INSERT INTO grojjUsers (user_id, username, password) VALUES
 
 (1, 'test', 'test');
 
+<<<<<<< HEAD
+=======
 INSERT INTO grojjusers(sellerid, sellerUname) VALUES
 (1, 'MeetDrew'),
 (2, 'Dolores45'),
@@ -41,5 +46,6 @@ INSERT INTO grojjaddresses(id, street, city, state, zip, latitude, longitude, se
 (8, '85 Livingston St', 'Brooklyn', 'NY', '11201', '40.691588°', '-73.990549°', 'Sabz', 9),
 (9, '8666 23rd Ave', 'Brooklyn', 'NY', '11214', '40.59941°', '-73.993082°', 'Kate08', 10),
 (10, '243 W 54th St', 'New York', 'NY', '10019', '40.764522°', '-73.983276°', 'MeetDrew', 1);
+>>>>>>> 1c4c87c8709cb13a39bb5f26302e8d8f38373279
 
 COMMIT;
