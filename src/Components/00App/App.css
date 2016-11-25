@@ -4,45 +4,67 @@ body {
 }
 
 header{
-  background-color: #5bc0de;
+  background-color: #b2b2cd;
   padding: 6px;
   height: 18vh;
   display: block;
 }
 
-header > h1 {
+header > h3 {
   position: absolute;
   top: 1vh;
-  left: 5vw;
+  left: 2.5vw;
   color: #fafafa;
   text-shadow: 2px 2px 2px #222;
   letter-spacing: 4px;
-  font-size: 3.5em;
-  display: block;
+  font-size: 2.5em;
+  /*display: block;*/
 }
 
+<<<<<<< HEAD
+/*header > button {
+=======
 .nButton{
   color: blue;
 }
 
 header > button {
+>>>>>>> 1c4c87c8709cb13a39bb5f26302e8d8f38373279
   position: relative;
   font-size: 1em;
   border: 1px solid #fafafa;
   color: #fafafa;
-  background-color: #5bc0de;
+  background-color: #b2b2cd;
   position: absolute;
   top: 3vh;
   right: 1vw;
   width: 15vw;
   display: block;
+}*/
+
+
+ .button {
+  position: relative;
+  top: 1px;
+  height: 4.5vh;
+  width: 8vw;
+  font-size: 1em;
+  border: 1px solid #fafafa;
+  color: #fafafa;
+  background-color: #b2b2cd;
 }
 
-header > button:hover{
+header > .button:hover{
   background-color: #fafafa;
-  color: #5bc0de;
+  color: #b2b2cd;
   transition: background-color 0.25s;
 }
+
+/*header > .button:hover{
+  background-color: #fafafa;
+  color: #b2b2cd;
+  transition: background-color 0.25s;
+}*/
 
 nav {
   position: relative;
@@ -52,7 +74,7 @@ nav {
   display: block;
 }
 
-nav > div {
+nav > .nButtons {
   color: #fafafa;
   margin: 0 5vw;
   position: relative;
@@ -62,10 +84,10 @@ nav > div {
   width: 15vw;
 }
 
-nav > div:hover {
+nav > .nButtons:hover {
   background-color: #fafafa;
+  color: #b2b2cd;
   transition: background-color 0.25s;
-  color: #5bc0de;
 }
 
 nav > div > button,
