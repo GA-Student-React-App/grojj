@@ -6,7 +6,6 @@ import Logout from '../01Logout/Logout.jsx';
 import CreateStore from '../02CreateStore/CreateStore.jsx';
 import StorefrontDD from '../01StorefrontDD/StorefrontDD.jsx';
 import AsideSMyStore from '../02AsideSmyStore/AsideSMyStore.jsx';
-import MyItemList from '../02MyItemList/MyItemList.jsx';
 import AddNewItem from '../02AddNewItem/AddNewItem.jsx';
 import EditStore from '../02EditStore/EditStore.jsx';
 import './MattApp.css';
@@ -388,7 +387,20 @@ export default class App extends Component {
     })
   };
 
-
+  deleteStorefront(id){
+    fetch('/api/storefronts/{id}', {
+      method: 'DELETE'
+    })
+    .then(() => {
+      const storefronts = this.state.storefronts.filter((storefront)=> {
+        return storefront.id !==id;
+      })
+      this.setState({
+        storefronts: storefronts
+      })
+    })
+    .catch(error => console.log(error))
+  };
 
   render(){
     return (
@@ -434,7 +446,9 @@ export default class App extends Component {
             currentStorefront={this.state.currentStorefront}
             currentUser={this.state.currentUser}
           />
-          <MyItemList />
+          <MyItemList
+
+          />
           <AddNewItem
             postNewItem={this.postNewItem.bind(this)}
             trackCreateItem={this.trackCreateItem.bind(this)}
